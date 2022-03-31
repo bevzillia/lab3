@@ -4,56 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab3</title>
 </head>
 <body>
-    <table border="1">
-        <tr height="40px">
-            <td align="center" colspan="2" width="180px">
-                <h3>Pizza Shop 2.0</h3>
-            </td> 
-        </tr>
-        <tr height="40px">
-            <td width="180px">Name</td>
-            <td width="400px"><input/td>
-        </tr>
-        <tr height="40px">
-            <td width="180px">Pizza Topping</td>
-            <td width="400px">
-                <input type="radio" name="topping">Supreme
-                <br>
-                <input type="radio" name="topping">Vegetarian
-                <br>
-                <input type="radio" name="topping"> Hawaiian
-            </td>
-        </tr>
-        <tr height="40px">
-            <td width="180px">Pizza Souce</td>
-            <td width="400px">
-                <select name="" id="">
-                    <option value="Tomato">Tomato</option>
-                    <option value="BBQ">BBQ</option>
-                    <option value="Carbonara">Carbonara</option>
-                </select>
-            </td>
-        </tr>
-        <tr height="40px">
-            <td width="180px">Optional Extras</td>
-            <td width="400px">
-                <input type="checkbox" name="extras">Extra Cheese
-                <input type="checkbox" name="extras">Gluten Free Base
-        </tr>
-        <tr height="40px">
-            <td colspan="2" width="180px">Delivery Instructions:
-                <br>
-                <textarea name="" id="" cols="60" rows="7"></textarea>
-            </td>
-        </tr>
-        <tr height="40px">
-            <td colspan="2" width="180px">
-                <button>Send my Order</button>
-            </td>
-        </tr>
-    </table>
+    <form action="">
+        <table border="1">
+            <tr height="40px">
+                <td align="center" colspan="2" width="180px">
+                    <h3>Pizza Shop 2.0</h3>
+                </td> 
+            </tr>
+            <tr height="40px">
+                <td width="180px">Name</td>
+                <td width="400px">
+                    <input name="name" required placeholder="Illia Bevz"></input>
+                </td>
+            </tr>
+            <tr height="40px">
+                <td width="180px">Pizza Topping</td>
+                <td width="400px">
+                    <label >
+                        <input type="radio" value="supreme" name="topping" required>Supreme
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" value="vegetarian" name="topping">Vegetarian
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" value="hawaiian" name="topping">Hawaiian
+                    </label>
+                </td>
+            </tr>
+            <tr height="40px">
+                <td width="180px">Pizza Sauce</td>
+                <td width="400px">
+                    <select name="sauce" required>
+                        <option value="Tomato">Tomato</option>
+                        <option value="BBQ">BBQ</option>
+                        <option value="Carbonara">Carbonara</option>
+                    </select>
+                </td>
+            </tr>
+            <tr height="40px">
+                <td width="180px">Optional Extras</td>
+                <td width="400px">
+                    <label>
+                        <input type="checkbox" value="Extra Cheese" name="extras">Extra Cheese
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Gluten Free Base" name="extras">Gluten Free Base
+                    </label>
+                </td>
+            </tr>
+            <tr height="40px">
+                <td colspan="2" width="180px">Delivery Instructions:
+                    <textarea required placeholder="Add a lot of sauce" name="instructions" cols="60" rows="7"></textarea>
+                </td>
+            </tr>
+            <tr height="40px">
+                <td colspan="2" width="180px">
+                    <button>Send my Order</button>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
